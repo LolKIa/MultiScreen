@@ -11,7 +11,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Toast;
 
 public class MainActivity extends ListActivity {
-    String[] countries = { "Аргентина", "Бразилия", "Чили", "Колумбия", "Уругвай"};
+    String[] countries = { "Аргентина", "Бразилия", "Чили", "Колумбия", "Уругвай", "Просто"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,6 +44,10 @@ public class MainActivity extends ListActivity {
                     case 4:
                         Intent intent4 = new Intent(MainActivity.this, Urugvai.class);
                         startActivity(intent4);
+                        break;
+                    case 5:
+                        Intent intent5 = new Intent(MainActivity.this, Prosto.class);
+                        startActivity(intent5);
                         break;
                 }
                 Toast.makeText(getApplicationContext(), "Вы выбрали " +
